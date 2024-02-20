@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="d-flex flex-wrap justify-content-center">
+        {% for i in meals %}
+        <div class="card" style="width: 18rem; margin: 15px">
+            <img src="{{i.strMealThumb}}" class="card-img-top" alt="meal image">
+            <div class="card-body">
+              <h3 class="card-title">{{i.strMeal}}</h3>
+              <p class="card-text">Welcome to the biggest food mall of the world</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
